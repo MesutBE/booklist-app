@@ -1,9 +1,6 @@
-// Event: Display Books
-document.addEventListener('DOMContentLoaded', UI.displayBooks);
-
-
 // Event: Add a Book
 document.querySelector('#book-form').addEventListener('submit', (e) => {
+    debugger;
     // Prevent actual submit
     e.preventDefault();
 
