@@ -2,8 +2,11 @@
 // UI Class: Handle UI Tasks
 class UI {
     static displayBooks() {
+        debugger;
         const books = Store.getBooks();
 
+        const list = document.querySelector('#book-list');
+        list.innerHTML = '';
         books.forEach((book) => UI.addBookToList(book));
     }
 
@@ -12,7 +15,6 @@ class UI {
         const list = document.querySelector('#book-list');
 
         const row = document.createElement('tr');
-
         row.innerHTML = `
       <td>${book.title}</td>
       <td>${book.author}</td>
